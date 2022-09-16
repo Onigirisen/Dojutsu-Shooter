@@ -1,0 +1,38 @@
+{
+  "name": "dojutsu-shooter",
+  "version": "1.0.0",
+  "description": "## Background Dojutsu Shooter is a 2D bubble shooter inspired by the game, Bubble Pop. The player controls a stationary shooter at the bottom of the board whose goal is to knock down all the \"balls\" floating at the top of the board by matching three or more \"balls\" with like appearances. The player can shoot a projectile either directly in an indicated direction or may make trick shots by bouncing the projectile off the sides of the board. Once the game is finished, the user will be shown their accumulated score (may add in a list of high scores).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Onigirisen/Dojutsu-Shooter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Onigirisen/Dojutsu-Shooter/issues"
+  },
+  "homepage": "https://github.com/Onigirisen/Dojutsu-Shooter#readme",
+  "dependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "babel-loader": "^8.2.5",
+    "core-js": "^3.25.1",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+    "browserslist": [
+      "defaults"
+    ]
+}
