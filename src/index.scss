@@ -9,7 +9,9 @@ html {
 }
 
 body {
+  background-image:url("/Dojutsu-Shooter/src/background.png");
   background-color: $black;
+  background-size: auto;
   display: flex;
   height: 100%;
   width: 100%;
@@ -20,6 +22,7 @@ body {
 
 .canvas-container canvas, .canvas-container div {
     border-radius: 10px;
+    border: 2px solid $purple;
 }
 
 .canvas-container {

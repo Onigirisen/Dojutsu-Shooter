@@ -53,7 +53,9 @@ html {
 }
 
 body {
+  background-image: url("/Dojutsu-Shooter/src/background.png");
   background-color: #1E1E24;
+  background-size: auto;
   display: flex;
   height: 100%;
   width: 100%;
@@ -64,6 +66,7 @@ body {
 
 .canvas-container canvas, .canvas-container div {
   border-radius: 10px;
+  border: 2px solid #7e33c0;
 }
 
 .canvas-container {
@@ -96,7 +99,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-.game-instructions li, .game-highscores li {
+.game-instructions li {
   padding: 5px 10px;
 }
 
@@ -177,6 +180,7 @@ s .game-controls span {
   grid-row: 1;
   grid-gap: 10px;
   grid-template-columns: 75% auto;
+  justify-content: space-evenly;
 }
 
 .game-lower-container {
