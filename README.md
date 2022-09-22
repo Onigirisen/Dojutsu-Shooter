@@ -7,7 +7,6 @@ Dojutsu Shooter is a 2D bubble shooter inspired by the game, Bubble Pop. The pla
 - [←]: Move left
 - [→]: Move right
 - [space]: Shoot a ball
-- [R]: Restart level
 
 ## Functionality & MVP
 In Dojutsu Shooter, users will be able to:
