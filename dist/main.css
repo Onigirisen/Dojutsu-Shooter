@@ -1,6 +1,199 @@
-html,body,div,main,nav,article,footer,p,ul,li,button,input,h1,h2,h3,h4,h5,textarea,label,span,a,form,img,section{margin:0;padding:0;border:0;outline:0;font:inherit;color:inherit;text-align:inherit;text-decoration:inherit;vertical-align:inherit;box-sizing:inherit;background:rgba(0,0,0,0)}ul{list-style:none}img{display:block;width:100%;height:auto}input[type=password],input[type=email],input[type=text],input[type=submit],textarea,button{-webkit-appearance:none;-moz-appearance:none}button,input[type=submit]{cursor:pointer}
-html{height:100%;box-sizing:border-box;font-family:Roboto,Arial,Helvetica,sans-serif;font-size:12px;overflow:auto}body{background-color:#1e1e24;display:flex;height:100%;width:100%;flex-direction:column;align-items:center;justify-content:center}.canvas-container canvas,.canvas-container div{border-radius:10px}.canvas-container{position:relative}
-.game-left-sidebar{max-width:240px;height:100%;position:relative}.game-sidebar-button{font-weight:500;margin-bottom:10px;padding:10px 0;text-align:center;background-color:#7e33c0;color:#f7ebe8;margin:-5px -5px -5px -5px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px}.game-instructions li,.game-highscores li{padding:5px 10px}.game-instructions,.game-controls{height:auto;width:100%;background-color:#fff;border:2px solid #7e33c0;border-radius:10px;font-size:16px;padding:5px;margin-bottom:7px}.game-controls-info,.game-instructions-info{display:block;overflow:hidden;padding-top:10px}.game-controls-info{height:190px}.game-instructions-info{height:auto}.game-sidebar-button-bottom{border-bottom-left-radius:0px;border-bottom-right-radius:0px}.game-instructions ul{list-style-type:disc;list-style-position:inside}.game-instructions li{padding-left:5px;margin-left:5px}.game-controls p{padding:5px 10px}s .game-controls span{font-size:22px;font-weight:700;padding:0 1.7px}.game-left-link-icons{font-size:40px;color:#f7ebe8;display:flex;width:100%;justify-content:space-evenly;align-items:flex-end;height:100%}.game-left-link-icons a:hover{color:#7e33c0}
-.game-container{display:grid;grid-template-rows:150px 1fr;grid-gap:10px}.game-upper-container{display:grid;grid-row:1;grid-gap:10px;grid-template-columns:75% auto}.game-lower-container{display:grid;grid-row:2;grid-gap:10px;grid-template-columns:75% 25%;max-height:80%}.game-left-sidebar{display:flex;flex-direction:column;flex-shrink:1}.canvas-container{display:flex;flex-direction:column}
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/reset.scss ***!
+  \********************************************************************************************************************************************/
+html, body, div, main, nav, article, footer,
+p, ul, li, button, input, h1, h2, h3, h4, h5,
+textarea, label, span, a, form, img, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
 
-/*# sourceMappingURL=main.css.map*/
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type=password],
+input[type=email],
+input[type=text],
+input[type=submit],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type=submit] {
+  cursor: pointer;
+}
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  overflow: auto;
+}
+
+body {
+  background-color: #1E1E24;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas-container canvas, .canvas-container div {
+  border-radius: 10px;
+}
+
+.canvas-container {
+  /*   height: 700px;
+    width: 700px; */
+  position: relative;
+}
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/sidebars.scss ***!
+  \***********************************************************************************************************************************************/
+.game-left-sidebar {
+  max-width: 240px;
+  /*   min-width: 250px; */
+  height: 100%;
+  /* box-sizing: border-box; */
+  position: relative;
+}
+
+.game-sidebar-button {
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #7e33c0;
+  color: #F7EBE8;
+  margin: -5px -5px -5px -5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.game-instructions li, .game-highscores li {
+  padding: 5px 10px;
+}
+
+.game-instructions, .game-controls {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #7e33c0;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
+.game-controls-info, .game-instructions-info {
+  display: block;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.game-controls-info {
+  height: auto;
+}
+
+.game-instructions-info {
+  height: auto;
+}
+
+.game-sidebar-button-bottom {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.game-instructions ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.game-instructions li {
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.game-controls p {
+  padding: 5px 10px;
+}
+
+s .game-controls span {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 1.7px;
+}
+
+.game-left-link-icons {
+  font-size: 40px;
+  color: #F7EBE8;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.game-left-link-icons a:hover {
+  color: #7e33c0;
+}
+/*!*******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/grid.scss ***!
+  \*******************************************************************************************************************************************/
+.game-container {
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  grid-gap: 10px;
+}
+
+.game-upper-container {
+  display: grid;
+  grid-row: 1;
+  grid-gap: 10px;
+  grid-template-columns: 75% auto;
+}
+
+.game-lower-container {
+  display: grid;
+  grid-row: 2;
+  grid-gap: 10px;
+  grid-template-columns: 75% 25%;
+  max-height: 80%;
+}
+
+.game-left-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+}
