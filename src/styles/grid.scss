@@ -1,0 +1,31 @@
+.game-container {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-gap: 10px;
+  }
+  
+.game-upper-container {
+    display: grid;
+    grid-row: 1;
+    grid-gap: 10px;
+    grid-template-columns: 75% auto;
+}
+  
+.game-lower-container {
+    display: grid;
+    grid-row: 2;
+    grid-gap: 10px;
+    grid-template-columns: 75% 25%;
+    max-height: 80%;
+}
+  
+.game-left-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+  
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+}
